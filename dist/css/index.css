@@ -52,6 +52,12 @@ table {
   border-spacing: 0;
 }
 
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
 body {
   background: #f8f8ff;
 }
@@ -61,6 +67,37 @@ body {
   display: -ms-flexbox;
   display: flex;
   height: 100px;
-  background: #b666d2;
+  background: #6761A8;
+}
+
+.nav-content img {
+  margin: 2%;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 45%;
+}
+
+nav a {
+  padding: 25px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.img-container img {
+  background-repeat: no-repeat;
+  max-height: 300px;
+  width: 100%;
+  background-position: center;
+  background-attachment: fixed;
+  -webkit-box-shadow: inset 3px 1px 15px rgba(0, 0, 0, 0.5);
+          box-shadow: inset 3px 1px 15px rgba(0, 0, 0, 0.5);
 }
 /*# sourceMappingURL=index.css.map */
