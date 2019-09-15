@@ -60,6 +60,7 @@ table {
 
 body {
   background: #f8f8ff;
+  font-family: 'Montserrat';
 }
 
 .nav-content {
@@ -78,7 +79,10 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 45%;
+  width: 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 nav a {
@@ -89,6 +93,14 @@ nav a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-decoration: none;
+  color: #f8f8ff;
+}
+
+.intro-text-content p {
+  margin-top: 3%;
+  line-height: 1.8rem;
+  padding: 1.25%;
 }
 
 .img-container img {
@@ -97,6 +109,65 @@ nav a {
   width: 100%;
   background-position: center;
   background-attachment: fixed;
+  background-size: auto;
+  -webkit-box-shadow: inset 3px 1px 15px rgba(0, 0, 0, 0.5);
+          box-shadow: inset 3px 1px 15px rgba(0, 0, 0, 0.5);
+}
+
+.services-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.services-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.services-content img {
+  width: 250px;
+  height: 250px;
+}
+
+.services-content p {
+  width: 65%;
+  padding: 2.5%;
+  line-height: 1.5rem;
+}
+
+.events {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.image-break-container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.image-break-container .image-break-one {
+  width: 100%;
+  background-image: url("/dist/img/make-cakes.jpg");
+  background-repeat: no-repeat;
+  min-height: 300px;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
   -webkit-box-shadow: inset 3px 1px 15px rgba(0, 0, 0, 0.5);
           box-shadow: inset 3px 1px 15px rgba(0, 0, 0, 0.5);
 }
