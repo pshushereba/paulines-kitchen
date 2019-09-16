@@ -110,8 +110,6 @@ nav a {
   background-position: center;
   background-attachment: fixed;
   background-size: auto;
-  -webkit-box-shadow: inset 3px 1px 15px rgba(0, 0, 0, 0.5);
-          box-shadow: inset 3px 1px 15px rgba(0, 0, 0, 0.5);
 }
 
 .services-container {
@@ -157,7 +155,7 @@ nav a {
 
 .image-break-container {
   width: 100%;
-  margin: 0 auto;
+  margin: 2.5% auto;
 }
 
 .image-break-container .image-break-one {
@@ -165,10 +163,61 @@ nav a {
   background-image: url("/dist/img/make-cakes.jpg");
   background-repeat: no-repeat;
   min-height: 300px;
-  background-position: center;
+  background-position: center, 80%;
   background-attachment: fixed;
-  background-size: cover;
+  background-size: contain;
   -webkit-box-shadow: inset 3px 1px 15px rgba(0, 0, 0, 0.5);
           box-shadow: inset 3px 1px 15px rgba(0, 0, 0, 0.5);
+}
+
+.card {
+  width: 350px;
+  border-radius: 5px;
+  padding: 25px;
+  margin: 15px;
+  -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.card .card-content {
+  margin-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  height: 125px;
+}
+
+.card .card-img-1 {
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  min-height: 250px;
+  background-image: url("/dist/img/IMG_2153.jpg");
+}
+
+.card button {
+  padding: 5px 10px;
+  border: 1px solid white;
+  background-color: transparent;
+  border-radius: 5px;
+  color: dodgerblue;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+.card button:hover {
+  background-color: dodgerblue;
+  border: 1px solid transparent;
+  color: white;
 }
 /*# sourceMappingURL=index.css.map */

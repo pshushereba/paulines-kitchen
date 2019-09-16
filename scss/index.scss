@@ -51,7 +51,6 @@ nav {
         background-position: center;
         background-attachment: fixed;
         background-size: auto;
-        box-shadow: inset 3px 1px 15px rgba(0, 0, 0, .50);
     }
 }
 
@@ -83,17 +82,59 @@ nav {
 
 .image-break-container {
     width: 100%;
-    margin: 0 auto;
+    margin: 2.5% auto;
 
     .image-break-one {
         width: 100%;
         background-image: url("/dist/img/make-cakes.jpg");
         background-repeat: no-repeat;
         min-height: 300px;
-        background-position: center;
+        background-position: center, 80%;
         background-attachment: fixed;
-        background-size: cover;
+        background-size: contain;
         box-shadow: inset 3px 1px 15px rgba(0, 0, 0, .50);
     }
 }
 
+.card{
+	width: 350px;
+	border-radius: 5px;
+	padding: 25px;	
+	margin: 15px;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, .50);
+
+
+	.card-content{
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+		height: 125px;
+	}
+
+	.card-img-1{
+		width: 100%;
+		background-size: cover;
+		background-position: center;
+		min-height: 250px;
+		background-image: url("/dist/img/IMG_2153.jpg");
+	}
+
+
+	button{
+		padding: 5px 10px;
+		border: 1px solid white;
+		background-color: transparent;
+		border-radius: 5px;
+		color: dodgerblue;
+		transition: 500ms;
+
+		&:hover{
+			background-color: dodgerblue;
+			border: 1px solid transparent;
+			color: white;
+		}
+	}
+
+}
